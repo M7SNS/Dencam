@@ -12,6 +12,11 @@ import time
 
 st.set_page_config(layout="wide")
 
+st.set_page_config(
+    page_title="Dencam",
+    page_icon="icon.png"    # Path to your icon file
+)
+
 if "lang" not in st.session_state:
     st.session_state.lang = "en"
 
@@ -286,3 +291,4 @@ Team Members:
 - عزام الزيد
 </div>
 """, unsafe_allow_html=True)
+
